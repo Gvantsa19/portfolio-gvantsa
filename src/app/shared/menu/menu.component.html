@@ -1,0 +1,7 @@
+<ul class="__list" [@state]="expanded">
+  <li class="__item" *ngFor="let name of items">
+    <a href="#" (click)="onItemClick.emit()" class="__link">
+      {{ name }}
+    </a>
+  </li>
+</ul>

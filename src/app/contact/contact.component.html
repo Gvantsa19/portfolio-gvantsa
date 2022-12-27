@@ -1,0 +1,92 @@
+<div class="home_div absolute top-2/4 left-1/2 mt-[50px]">
+  <div class="flex flex-wrap justify-around">
+    <div class="flex mb-[15px] common">
+      <button class="text-[#0ea5e9] mr-[20px] mat_icon" mat-icon-button>
+        <mat-icon>email</mat-icon>
+      </button>
+      <div>
+        <h2 class="text-white italic capitalize text-[20px]">email me</h2>
+        <a
+          class="text-white text-[16px]"
+          href="mailto:oqropiridzegvantsa@gmail.com"
+          >{{ emails }}</a
+        >
+      </div>
+    </div>
+
+    <div class="flex mb-[15px] common">
+      <button class="text-[#0ea5e9] mr-[20px] mat_icon" mat-icon-button>
+        <mat-icon>links</mat-icon>
+      </button>
+      <div>
+        <h2 class="text-white italic capitalize text-[20px]">
+          Social Profiles
+        </h2>
+        <a class="text-white mr-[15px] text-[28px]" href="{{ github }}"
+          ><i class="fa fa-github" aria-hidden="true"></i
+        ></a>
+        <a class="text-white text-[28px]" href="{{ linkedin }}"
+          ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+        ></a>
+      </div>
+    </div>
+
+    <div class="flex mb-[15px] common">
+      <button class="text-[#0ea5e9] mr-[20px] mat_icon" mat-icon-button>
+        <mat-icon>phone</mat-icon>
+      </button>
+      <div>
+        <h2 class="text-white italic capitalize text-[20px]">Call Me</h2>
+        <span class="text-white italic capitalize text-[20px]">{{
+          phone
+        }}</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="section text-gray-600 body-font relative">
+    <div class="container px-5 mx-auto flex flex-wrap">
+      <form
+        [formGroup]="form"
+        (ngSubmit)="send()"
+        class="flex flex-col w-full mt-8"
+      >
+        <div class="relative mb-[30px]">
+          <label for="name" class="text-white leading-7 text-sm text-gray-600"
+            >Name</label
+          >
+          <input
+            formControlName="name"
+            type="text"
+            id="name"
+            class="same w-full rounded text-base outline-none py-1 px-3 leading-8"
+          />
+        </div>
+        <div class="relative mb-[30px]">
+          <label for="email" class="text-white leading-7 text-sm text-gray-600"
+            >Email</label
+          >
+          <input
+            formControlName="email"
+            type="email"
+            id="email"
+            class="same w-full rounded text-base outline-none py-1 px-3 leading-8"
+          />
+        </div>
+        <div class="relative mb-[30px]">
+          <label
+            for="message"
+            class="text-white leading-7 text-sm text-gray-600"
+            >Message</label
+          >
+          <textarea
+            formControlName="message"
+            id="message"
+            class="same w-full rounded h-32 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn text-white bg-[#0ea5e9]">Send</button>
+      </form>
+    </div>
+  </section>
+</div>

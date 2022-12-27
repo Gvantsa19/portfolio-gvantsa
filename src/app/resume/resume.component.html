@@ -1,0 +1,101 @@
+<div class="home_div absolute top-2/4 left-1/2 mt-[150px]">
+  <div class="flex flex-wrap justify-center items-start">
+    <div class="mr-[100px] resume_div">
+      <h2 class="text-white capitalize text-[20px] mb-[20px]">
+        WORK EXPERIENCE
+      </h2>
+      <div class="resume">
+        <h2 class="text-[#0ea5e9] capitalize text-[18px]">
+          JUNIOR FULL-STACK DEVELOPER
+        </h2>
+        <h3 class="text-white italic capitalize mb-[20px] text-[16px]">
+          RSI GEORGIA
+        </h3>
+        <ul class="list-disc ul_li">
+          <li
+            class="text-white capitalize text-[16px]"
+            *ngFor="let x of roles1"
+          >
+            {{ x.name }}
+          </li>
+        </ul>
+      </div>
+      <div class="resume">
+        <h2 class="text-[#0ea5e9] capitalize text-[18px]">.NET INTERN</h2>
+        <h3 class="text-white italic capitalize mb-[20px] text-[16px]">
+          CREDO BANK
+        </h3>
+        <ul class="list-disc ul_li">
+          <li
+            class="text-white capitalize text-[16px]"
+            *ngFor="let x of roles2"
+          >
+            {{ x.name }}
+          </li>
+        </ul>
+      </div>
+      <div class="resume">
+        <h2 class="text-[#0ea5e9] capitalize text-[18px]">
+          JUNIOR FRONT-END DEVELOPER
+        </h2>
+        <h3 class="text-white italic capitalize mb-[20px] text-[16px]">
+          SELF.GE
+        </h3>
+        <ul class="list-disc ul_li">
+          <li
+            class="text-white capitalize text-[16px]"
+            *ngFor="let x of roles3"
+          >
+            {{ x.name }}
+          </li>
+        </ul>
+      </div>
+      <div class="resume">
+        <h2 class="text-[#0ea5e9] capitalize text-[18px]">
+          FRONT END DEVELOPER INTERN
+        </h2>
+        <h3 class="text-white italic capitalize mb-[20px] text-[16px]">
+          GEOLAB
+        </h3>
+        <ul class="list-disc ul_li">
+          <li
+            class="text-white capitalize text-[16px]"
+            *ngFor="let x of roles4"
+          >
+            {{ x.name }}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="text-white capitalize text-[20px] mb-[20px]">
+        EDUCATION AND TRAINING
+      </h2>
+      <div class="resume">
+        <h2 class="text-[#0ea5e9] capitalize text-[18px]">
+          SOCIAL AND POLITICAL SCIENCE
+        </h2>
+        <span class="text-white capitalize text-[16px]"
+          >Tbilisi State University</span
+        >
+      </div>
+      <div class="resume">
+        <h2 class="text-[#0ea5e9] capitalize text-[18px]">
+          BACK END DEVELOPMENT C#
+        </h2>
+        <span class="text-white capitalize text-[16px]">Orient Logic</span>
+      </div>
+      <div class="resume">
+        <h2 class="text-[#0ea5e9] capitalize text-[18px]">Download CV</h2>
+        <a
+          class="text-white capitalize text-[28px]"
+          href="../../assets/CV-Gvantsa Okropiridze.pdf"
+          attributes-list
+          download
+          ><i class="fa fa-download" aria-hidden="true"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+</div>

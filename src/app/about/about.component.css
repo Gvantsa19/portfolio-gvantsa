@@ -1,0 +1,85 @@
+.home_div {
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 50px;
+  max-width: 1600px;
+  width: 100%;
+  height: auto;
+  z-index: 11111;
+}
+.line {
+  max-width: 500px;
+  height: 2px;
+  background-color: #0ea5e9;
+}
+.interest_div {
+  max-width: 150px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 15px;
+}
+.interest_flex {
+  max-width: 1600px;
+  width: 100%;
+  height: auto;
+}
+
+.skill {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 15px;
+}
+.bckgr {
+  background-color: #0ea5e9;
+}
+.animated-progress {
+  max-width: 300px;
+  width: 100%;
+  height: 15px;
+  border-radius: 15px;
+  margin: 20px 10px;
+  border: 1px solid #0ea5e9;
+  overflow: hidden;
+  position: relative;
+}
+li:nth-child(7) .animated-progress span,
+li:nth-child(-n + 3) .animated-progress span,
+li:nth-child(13) .animated-progress span {
+  width: 85%;
+}
+li:nth-child(4) .animated-progress span {
+  width: 55%;
+}
+li:nth-child(6) .animated-progress span,
+li:nth-child(11) .animated-progress span,
+li:nth-child(14) .animated-progress span,
+li:nth-child(15) .animated-progress span {
+  width: 95%;
+}
+li:nth-child(8) .animated-progress span,
+li:nth-child(9) .animated-progress span,
+li:nth-child(10) .animated-progress span,
+li:nth-child(12) .animated-progress span {
+  width: 75%;
+}
+.animated-progress span {
+  height: 100%;
+  display: block;
+  width: 100%;
+  color: rgb(255, 251, 251);
+  line-height: 30px;
+  position: absolute;
+  text-align: end;
+  padding-right: 5px;
+}
+.progress-red span {
+  background-color: #0ea5e9;
+}
+@media screen and (max-width: 1380px) {
+  .home_div {
+    margin-top: 45vw;
+  }
+}

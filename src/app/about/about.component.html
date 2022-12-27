@@ -1,0 +1,99 @@
+<div class="home_div absolute top-2/4 left-1/2 mt-[200px]">
+  <div class="" data-aos="fade-left">
+    <h3 class="text-[#0ea5e9] capitalize text-[20px] mb-[35px]">
+      full stack software engineer
+    </h3>
+    <div class="flex">
+      <ul class="flex">
+        <div class="mr-[50px]">
+          <li class="mb-[5px]">
+            <i class="bi bi-chevron-right"></i>
+            <strong class="text-white capitalize text-[18px] mr-[20px]"
+              ><i
+                class="text-[#0ea5e9] mr-[10px] fa fa-arrow-right"
+                aria-hidden="true"
+              ></i
+              >GitHub:</strong
+            >
+            <a
+              class="text-white capitalize text-[18px]"
+              href="https://github.com/Gvantsa19"
+              >{{ github }}</a
+            >
+          </li>
+          <li>
+            <i class="bi bi-chevron-right"></i>
+            <strong class="text-white capitalize text-[18px] mr-[20px]"
+              ><i
+                class="text-[#0ea5e9] mr-[10px] fa fa-arrow-right"
+                aria-hidden="true"
+              ></i
+              >Phone:</strong
+            >
+            <span class="text-white capitalize text-[18px]">{{ phone }}</span>
+          </li>
+        </div>
+        <div>
+          <li>
+            <i class="bi bi-chevron-right"></i>
+            <strong class="text-white capitalize text-[18px] mr-[20px]"
+              ><i
+                class="text-[#0ea5e9] mr-[10px] fa fa-arrow-right"
+                aria-hidden="true"
+              ></i
+              >City:</strong
+            >
+            <span class="text-white capitalize text-[18px]">{{ city }}</span>
+          </li>
+          <li>
+            <i class="bi bi-chevron-right"></i>
+            <strong class="text-white capitalize text-[18px] mr-[20px]"
+              ><i
+                class="text-[#0ea5e9] mr-[10px] fa fa-arrow-right"
+                aria-hidden="true"
+              ></i
+              >Email:</strong
+            >
+            <a
+              class="text-white text-[18px]"
+              href="mailto:oqropiridzegvantsa@gmail.com
+                  "
+              >{{ email }}</a
+            >
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div class="mt-[35px] line"></div>
+    <h2 class="text-white text-[22px] uppercase mt-[25px]">skills</h2>
+    <div>
+      <ul class="ul_li skill_div flex flex-wrap justify-center">
+        <li
+          class="flex items-center text-white text-[16px] capitalize mr-[20px] mt-[20px] skill"
+          *ngFor="let item of skills"
+        >
+          {{ item.name }}
+          <div class="animated-progress progress-red">
+            <span data-progress="85"></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="mt-[35px] line"></div>
+    <h2 class="text-white text-[22px] uppercase mt-[25px]">Interests</h2>
+    <div class="flex interest_flex">
+      <ul class="mr-[30px] flex flex-wrap interest_flex justify-between">
+        <li
+          class="flex items-center text-white text-[14px] capitalize mt-[25px] text-center flex interest_div"
+          *ngFor="let item of interest"
+        >
+          <i
+            class="text-[#0ea5e9] mr-[10px] fa fa-circle-thin"
+            aria-hidden="true"
+          ></i>
+          {{ item.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

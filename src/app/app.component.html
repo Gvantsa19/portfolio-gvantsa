@@ -1,0 +1,56 @@
+<nav
+  style="margin-top: 15px; z-index: 111"
+  class="flex justify-center relative navig"
+>
+  <li class="nav-item active">
+    <a class="nav-link text-white text-[22px]" routerLink="/">Home</a>
+  </li>
+  <li class="nav-item active">
+    <a class="nav-link text-white text-[22px]" routerLink="/about">About</a>
+  </li>
+  <li class="nav-item active">
+    <a class="nav-link text-white text-[22px]" routerLink="/resume">Resume</a>
+  </li>
+  <li class="nav-item active">
+    <a class="nav-link text-white text-[22px]" [routerLink]="'/portfolio'"
+      >Portfolio</a
+    >
+  </li>
+  <li class="nav-item active">
+    <a class="nav-link text-white text-[22px]" routerLink="/contact">
+      Contact</a
+    >
+  </li>
+</nav>
+<div class="body">
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <div class="main-content-wrapper">
+      <a class="none" routerLink="/">Home</a>
+      <a class="none" routerLink="/about">About</a>
+      <a class="none" routerLink="/resume">Resume</a>
+      <a class="none" routerLink="/portfolio">Portfolio</a>
+      <a class="none" routerLink="/contact">Contact</a>
+    </div>
+  </div>
+</div>
+
+<div class="earth_div">
+  <a routerLink="/"
+    ><img
+      class="earth"
+      src="../assets/l-intro-1650653861-transformed.png"
+      alt=""
+  /></a>
+</div>
+
+<div class="stars"></div>
+<div class="twinkling"></div>
+<div class="clouds"></div>
+
+<router-outlet></router-outlet>
